@@ -104,23 +104,10 @@ Ensure correct paths (/service1/*, /service2/*).
 
 Check logs: `docker-compose logs nginx`
 
-10. **Directory Structure:**
+10. **Directory Structure**
 
-├── service_1/
-│   ├── Dockerfile
-│   ├── main.go
-│   ├── README
-├── service_2/
-│   ├── Dockerfile
-│   ├── app.py
-│   ├── pyproject.toml
-│   ├── uv.lock
-├── nginx/
-│   ├── Dockerfile
-│   ├── nginx.conf
-├── docker-compose.yml
-├── test.sh
-├── README.md
+![Screenshot (907)](https://github.com/user-attachments/assets/d7bc7087-9c3c-43c1-9f7f-370271431024)
+
 
 
 
