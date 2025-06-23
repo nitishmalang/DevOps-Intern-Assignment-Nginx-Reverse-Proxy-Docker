@@ -24,7 +24,7 @@ http://localhost:8080/service1/hello → {"message":"Hello from Service 1"}
 
 http://localhost:8080/service1/ping → {"service":"1","status":"ok"}
 
-    *Service 2 (Python Flask)*:
+   *Service 2 (Python Flask)*:
 
 http://localhost:8080/service2/hello → {"message":"Hello from Service 2"}
 
