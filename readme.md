@@ -45,21 +45,21 @@ http://localhost:8080/service2/ping → {"service":"2","status":"ok"}
 
 8. **Bonus Features**
    
-***Health Checks:***
+---***Health Checks:***
 
 service_1: Verifies port 8001 with nc, compatible with distroless.
 
 service_2: Checks /ping endpoint with curl.
 
 
-***Logging Clarity:***
+---***Logging Clarity:***
 
 Nginx logs include client IP, timestamp, request path, status code, and user agent.
 
 Service logs show startup details (e.g., ports 8001, 8002).
 
 
-***Clean Docker Setup:***
+---***Clean Docker Setup:***
 
 Multi-stage builds for service_1 (minimal distroless runtime).
 
@@ -69,7 +69,7 @@ Reproducible Python dependencies with uv.
 
 Isolated bridge network (app-network).
 
-***Security:***
+---***Security:***
 
 Avoided vulnerable golang:1.22-alpine (e.g., CVE-2025-22871).
 
@@ -77,7 +77,7 @@ Pinned uv==0.7.14 for stability.
 
 9. **Troubleshooting:**
    
-***Port Conflicts:***
+---***Port Conflicts:***
 
 Check: `netstat -aon | findstr "8080 8001 8002"`
 
@@ -89,7 +89,7 @@ Verify: `curl http://localhost:8001/ping` and `curl http://localhost:8002/ping`
 
 Check status: `docker inspect service_1 | findstr "Health"`
 
-***Build Issues:***
+---***Build Issues:***
 
 `Clear cache: docker builder prune`
 
@@ -98,7 +98,7 @@ Pre-pull images:
 `docker pull python:3.11-slim`
 `docker pull gcr.io/distroless/base-debian12`
 
-***Nginx 404 Errors:***
+---***Nginx 404 Errors:***
 
 Ensure correct paths (/service1/*, /service2/*).
 
