@@ -1,4 +1,4 @@
-### 🧪 **DevOps Intern Assignment: Nginx Reverse Proxy + Docker**
+### 🧪 **DevOps Assignment: Nginx Reverse Proxy + Docker**
 
 This project sets up uses Docker Compose to set up a system with two backend services (Golang and Python Flask) and an Nginx reverse proxy, demonstrating routing, health checks, logging and automated testing for a DevOps intern assignment.
 
